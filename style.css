@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: .5rem;
+    width: 100%;
+}
+
+button {
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: blueviolet;
+    border-radius: 2rem;
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: 500;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+}
+
+.one .left,
+.right {
+    margin-top: 1rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+}
+
+
+.one .left h1,h3 {
+    margin-top: 1rem;
+}
+
+.one .left .features{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.one .left .feature {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.one .left .feature img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.one .left .feature p {
+    margin: 0;
+    padding: 0;
+}
+
+.one .right {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one .right img{
+    height: auto;
+    width: 25rem;
+}
+
+/* section-2 */
+.two{
+    display: flex;
+    flex-direction: column;
+}
+
+.two .left,
+.right {
+    margin-top: 1rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+}
+.two .left{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two .left img{
+    height: auto;
+    width: 25rem;
+}
+
+.two .right h3,h2,p,button{
+    margin-top: 2rem;
+}
+
+.two .right .info{
+    margin-top:2rem ;
+}
+
+.two .right .info{
+    text-align: center;
+}
+.two .right .features{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.two .right .feature img {
+    width: 2rem;
+    height: 2rem;
+}
+.two .right .feature p {
+    margin: 0;
+    padding: 0;
+}
+
+.two .right .feature {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:700px) {
+
+    .one {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one .left,
+    .right {
+        width: 50%;
+        margin: 2rem;
+        border-radius: 2rem;
+    }
+
+    .navbar {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .navbar .logo {
+        margin-left: 0;
+        margin-right: 10rem;
+    }
+
+    .one .right {
+        background-color: blue;
+    }
+
+    .one .right img {
+        height: auto;
+        width: 25rem;
+    }
+
+    .two{
+        flex-direction: row;
+    }
+
+    .two .left,
+    .right {
+        width: 50%;
+        margin: 2rem;
+        border-radius: 2rem;
+    }
+    
+    .two .left{
+        background-color: blue;
+    }
+}
