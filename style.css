@@ -27,8 +27,9 @@ button {
     align-items: center;
 }
 
-.navbar .logo {
-    font-weight: 500;
+.navbar h2{
+    margin: 0;
+    padding: 0;
 }
 
 .navbar .menu ul {
@@ -114,8 +115,12 @@ button {
     width: 25rem;
 }
 
-.two .right h3,h2,p,button{
+.two .right h3,p,h2,button{
     margin-top: 2rem;
+}
+
+#bold{
+    font-weight: bold;
 }
 
 .two .right .info{
@@ -174,7 +179,7 @@ button {
     .one .left,
     .right {
         width: 50%;
-        margin: 2rem;
+        margin: 1rem;
         border-radius: 2rem;
     }
 
@@ -206,7 +211,7 @@ button {
     .two .left,
     .right {
         width: 50%;
-        margin: 2rem;
+        margin: 1rem;
         border-radius: 2rem;
     }
     
