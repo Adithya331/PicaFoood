@@ -171,6 +171,10 @@ margin: 0;
     text-align: center;
 }
 
+.four .menu{
+    margin: 1rem;
+}
+
 .four .menu .card1 {
     grid-area: card1;
 }
