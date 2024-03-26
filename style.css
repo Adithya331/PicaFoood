@@ -131,36 +131,39 @@ margin: 0;
     font-weight: bold;
 }
 
-.two .right .info{
-    margin-top:2rem ;
-}
+/* section three */
 
-.two .right .info{
+.three{
+    margin-top:5rem ;
+    margin-bottom: 5rem;
     text-align: center;
 }
-.two .right .features{
+
+.three .features{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
-.two .right .feature img {
-    width: 2rem;
-    height: 2rem;
+.three .feature img {
+    width: 4rem;
+    height: 4rem;
 }
-.two .right .feature p {
+.three .feature p {
     margin: 0;
     padding: 0;
 }
 
-.two .right .feature {
+.three .feature {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: .5rem;
 }
 
-.three{
+.four{
     margin-top:2rem ;
 }
 
@@ -168,25 +171,25 @@ margin: 0;
     text-align: center;
 }
 
-.three .menu .card1 {
+.four .menu .card1 {
     grid-area: card1;
 }
-.three .menu .card2{
+.four .menu .card2{
     grid-area: card2;
 }
-.three .menu .card3{
+.four .menu .card3{
     grid-area: card3;
 }
-.three .menu .card4{
+.four .menu .card4{
     grid-area: card4;
 }
 
-.three .menu img{
+.four .menu img{
     height: 15rem;
     width: 15rem;
 }
 
-.three .menu .card{
+.four .menu .card{
     box-sizing: border-box; 
     padding: 1rem;
     border-color: black;
@@ -195,7 +198,7 @@ margin: 0;
     margin: 1rem;
 }
 
-.three .menu .card .top{
+.four .menu .card .top{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,20 +210,21 @@ margin: 0;
     margin-top: 0rem;
 }
 
-.three .menu .card .bottom{
+.four .menu .card .bottom{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
 }
 
-.three .menubutton{
+.four .menubutton{
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.three .menubutton button{
+.four .menubutton button{
     width: 50%;
 }
 
@@ -229,7 +233,7 @@ margin: 0;
     body{
         font-size: 1.5rem;
     }
-    .three .menu{
+    .four .menu{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -290,7 +294,7 @@ margin: 0;
         background-color: blue;
     }
 
-    .three .menu{
+    .four .menu{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-areas: "card1 card2 card3 card4" ;
