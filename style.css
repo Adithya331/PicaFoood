@@ -287,13 +287,17 @@ margin: 0;
 
 .six{
     background: linear-gradient(to bottom, #8092e2, #3e5bdd);
-    /* padding: 3rem; */
+    padding-bottom: 2rem;
 }
 
 .six h3{
     color: white;
 }
+.six .bottom .section4 ul img{
+    height: 1.5rem;
+    width: 1.5rem;
 
+}
 .six .bottom {
     display: grid;
     grid-template-columns: 50% 50%;
