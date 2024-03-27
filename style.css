@@ -8,7 +8,6 @@
 
 body {
     width: 100%;
-    margin-bottom: 10rem;
 }
 
 button {
@@ -19,6 +18,13 @@ button {
     background-color: blue;
     border-radius: 2rem;
     border: none;
+}
+button:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid;
+    border-color: blue;
+    
 }
 
 .navbar {
@@ -106,7 +112,7 @@ margin: 0;
 }
 
 .two .left,
-.right {
+.two.right {
     margin: 1rem;
     flex-grow: 1;
     border-radius: 2rem;
@@ -123,8 +129,11 @@ margin: 0;
     width: 25rem;
 }
 
-.two .right h3,p,h2,button{
-    margin-top: 2rem;
+.two .right h3,
+.two .right p,
+.two .right h2,
+.two .right button {
+  margin-top: 2rem;
 }
 
 #bold{
@@ -202,21 +211,31 @@ margin: 0;
     margin: 1rem;
 }
 
+.four .menu .card:hover {
+    transform: scale(1.1); /* Scale up the card on hover */
+    background-color: rgb(233, 230, 230);
+  }
+
 .four .menu .card .top{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-.top p,h3{
+.four .menu .card .top p,.four .menu .card  .top h3{
     margin-top: 0rem;
 }
-.bottom h3,button{
+.four .menu .card .bottom h3, .four .menu .card .bottom button{
     margin-top: 0rem;
+}
+
+.four .menu .card .bottom button{
+    width: auto;
 }
 
 .four .menu .card .bottom{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
 }
@@ -230,6 +249,80 @@ margin: 0;
 
 .four .menubutton button{
     width: 50%;
+}
+
+.five{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.five .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.five .bottom button{
+    width: 20rem;
+}
+
+.five input{
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid;
+    border-color: rgb(160, 155, 155);
+}
+
+.six .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.six{
+    background: linear-gradient(to bottom, #8092e2, #3e5bdd);
+    /* padding: 3rem; */
+}
+
+.six h3{
+    color: white;
+}
+
+.six .bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "section1 section2"
+                        "section3 section4";
+
+}
+
+.six .bottom .section ul{
+    list-style-type: none;
+}
+
+.six .bottom .section1{
+    grid-area: section1;
+}
+.six .bottom .section2{
+    grid-area: section2;
+}
+.six .bottom .section3{
+    grid-area: section3;
+}
+.six .bottom .section4{
+    grid-area: section4;
+}
+
+.six .bottom .section{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width:690px) and (max-width:991px)
@@ -288,7 +381,7 @@ margin: 0;
     }
 
     .two .left,
-    .right {
+    .two .right {
         width: 50%;
         margin: 1rem;
         border-radius: 2rem;
@@ -302,5 +395,56 @@ margin: 0;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-areas: "card1 card2 card3 card4" ;
+    }
+
+    .combo{
+        position: relative;
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .combo .five{
+        margin: auto;
+        position: absolute; 
+        top: -35%;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        border-radius:8rem ;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border:1px solid;
+        width: 80%;
+        align-content: center;
+    }
+
+    .five .bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .five .bottom input, .five .bottom button{
+        margin: 0;
+        width: 20rem;
+        border: none;
+    }
+
+    .six{
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .six .bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
     }
 }
