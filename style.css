@@ -9,6 +9,13 @@ body {
     width: 100%;
 }
 
+#textcenter{
+    text-align: center;
+}
+
+#redtext{
+    color: tomato;
+}
 button {
     font-weight: bold;
     color: white;
@@ -56,15 +63,15 @@ margin: 0;
     flex-direction: column;
 }
 
-.one .left,
-.right {
+.one .left, 
+.one .right {
     margin: 1rem;
     flex-grow: 1;
     border-radius: 2rem;
 }
 
 
-.one .left h1,h3 {
+.one .left h1, .one .left h3 {
     margin-top: 1rem;
 }
 
@@ -92,16 +99,9 @@ margin: 0;
     padding: 0;
 }
 
-.one .right {
-    background-color: blue;
+.one .right{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.one .right img{
-    height: auto;
-    width: 25rem;
+    justify-content: flex-end;
 }
 
 /* section-2 */
@@ -116,16 +116,10 @@ margin: 0;
     flex-grow: 1;
     border-radius: 2rem;
 }
-.two .left{
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.two .left img{
-    height: auto;
-    width: 25rem;
+.two .left{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .two .right h3,
@@ -358,6 +352,8 @@ margin: 0;
         border-radius: 2rem;
     }
 
+    
+
     .navbar {
         margin: 1rem;
         display: flex;
@@ -369,32 +365,7 @@ margin: 0;
         margin-left: 0;
         margin-right: 10rem;
     }
-
-    .one{
-        position: relative;
-    }
-    .one .right .background{
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
-        height: auto;
-        width: 25rem;
-    }
-
-    .one .right .foreground{
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .one .right {
-        background-color: transparent;
-    }
-
-    .one .right img {
-        height: auto;
-        width: 25rem;
-    }
+    
 
     .two{
         flex-direction: row;
@@ -407,10 +378,6 @@ margin: 0;
         border-radius: 2rem;
     }
     
-    .two .left{
-        background-color: blue;
-    }
-
     .four .menu{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -439,6 +406,8 @@ margin: 0;
         border:1px solid;
         width: 80%;
         align-content: center;
+        background: url('./assets/bg.jpeg');
+        background-size: cover;
     }
 
     .five .bottom{
